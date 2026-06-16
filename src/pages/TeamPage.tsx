@@ -147,7 +147,9 @@ export const TeamPage: React.FC = () => {
                     <span className="truncate">{member.phone}</span>
                   </a>
                   <a 
-                    href={`mailto:${member.email}`}
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm font-semibold text-gray-300 hover:text-lime-accent transition-colors group/link"
                   >
                     <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white group-hover/link:text-black-rich group-hover/link:bg-lime-accent transition-colors shrink-0">
